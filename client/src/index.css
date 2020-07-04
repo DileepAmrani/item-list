@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background: lightyellow;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: lightblue;
+  font-size: 50px;
+  font-weight: normal;
+}
+.container {
+  border: 5px solid pink;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+}
+input {
+  outline: none;
+  border: none;
+  background-color: lightyellow;
+  border-bottom: 0.5px solid;
+  padding-bottom: 5px;
+}
+input::placeholder {
+  font-size: 11px;
+}
+h4 {
+  font-size: 15px;
+  font-weight: normal;
+
+  left: 0;
+}
+.btn-add {
+  display: block;
+  margin-top: 5px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: lightblue;
+  color: white;
+  font-style: italic;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.329) 1px 1px 1px;
+  cursor: pointer;
+  margin-left: 0px;
+  transition: margin-left ease-in 0.2s;
+}
+.btn-add:hover {
+  margin-left: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  margin-top: 30px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+ul li {
+  padding-bottom: 35px;
+  animation: anime 1s;
+}
+.edit,
+.delete {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 11px;
+  background: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: pink;
+}
+.edit {
+  color: white;
+  margin-left: 15px;
+  background-color: yellowgreen;
+}
+.delete {
+  color: white;
+  margin-left: 5px;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
